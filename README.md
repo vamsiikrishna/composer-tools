@@ -22,6 +22,6 @@ CLI
 
 ![CLI](https://i.stack.imgur.com/r7npq.png)
 
-WebPage
+WebPage ( has some basic sorting options )
 
 ![WebPage](https://i.stack.imgur.com/M9RJO.png)
