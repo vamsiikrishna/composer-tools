@@ -15,3 +15,13 @@ Download a release from https://github.com/vamsiikrishna/composer-tools/releases
 ### To save a report 
 
 ``` php composer-tools.phar generate composer.lock /home/vamsi/Desktop/composer-report.html ```
+
+### Screenshots
+
+CLI
+
+![CLI](https://i.stack.imgur.com/r7npq.png)
+
+WebPage
+
+![WebPage](https://i.stack.imgur.com/M9RJO.png)
