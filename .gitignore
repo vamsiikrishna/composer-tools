@@ -1,0 +1,5 @@
+box.phar
+composer.phar
+vendor
+.idea
+composer-tools.phar

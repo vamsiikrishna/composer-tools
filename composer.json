@@ -1,0 +1,21 @@
+{
+  "name": "vamsiikrishna/composer-tools",
+  "description": "Simple CLI application which offers some tools to analyse dependencies in your PHP project ",
+  "minimum-stability": "stable",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Vamsi Krishna B",
+      "email": "vamsi@fastmail.com"
+    }
+  ],
+  "require": {
+    "symfony/console": "^3.2",
+    "twig/twig": "^2.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Vamsi\\": "src/Vamsi"
+    }
+  }
+}

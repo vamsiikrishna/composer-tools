@@ -1,0 +1,23 @@
+{% extends 'template.html.twig' %}
+{% block body %}
+    <table id="packages-table">
+        <thead>
+        <tr>
+            <th>Package name</th>
+            <th>Release date</th>
+        </tr>
+        </thead>
+        <tbody>
+        {% for package in packages %}
+            <tr>
+                <td>{{ package.name }}</td>
+                <td>{{ package.time|date }}</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+    <script>
+        table = document.getElementById('packages-table');
+        new Tablesort(table);
+    </script>
+{% endblock body %}
