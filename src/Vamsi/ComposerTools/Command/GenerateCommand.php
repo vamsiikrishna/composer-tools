@@ -6,17 +6,17 @@ use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Input\InputArgument;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
-use Vamsi\ComposerTools\Info;
-use Twig_Loader_Filesystem;
 use Twig_Environment;
+use Twig_Loader_Filesystem;
+use Vamsi\ComposerTools\Info;
 
-Class GenerateCommand extends Command
+class GenerateCommand extends Command
 {
     protected function configure()
     {
         $this
-            ->setName("generate")
-            ->setDescription("Displays the extracted info")
+            ->setName('generate')
+            ->setDescription('Displays the extracted info')
             ->addArgument('ipath', InputArgument::REQUIRED, 'path to composer.lock')
             ->addArgument('opath', InputArgument::REQUIRED, 'The file in which the report should be saved');
     }
@@ -27,8 +27,8 @@ Class GenerateCommand extends Command
         $file = $input->getArgument('opath');
         $info->parse();
         $packages = $info->getPackages();
-        $loader = new Twig_Loader_Filesystem(__DIR__ . "/../Resources/views");
+        $loader = new Twig_Loader_Filesystem(__DIR__.'/../Resources/views');
         $twig = new Twig_Environment($loader);
-        file_put_contents($file, $twig->render('table.html.twig', array('packages' => $packages)));
+        file_put_contents($file, $twig->render('table.html.twig', ['packages' => $packages]));
     }
 }

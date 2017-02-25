@@ -10,7 +10,6 @@ class Info
 
     private $packages;
 
-
     public function __construct($path)
     {
         $this->path = $path;
@@ -59,7 +58,6 @@ class Info
     public function getHash()
     {
         return array_key_exists('content-hash', $this->decoded) ? $this->decoded['content-hash'] : null;
-
     }
 
     public function getPackages()
@@ -75,8 +73,5 @@ class Info
         }
 
         return $this->packages;
-
     }
-
-
 }

@@ -16,7 +16,6 @@ class BasicPackage
      */
     private $time;
 
-
     public function __construct($name, $time)
     {
         $this->name = $name;
